@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fitness Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Iocns cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <style>
+        /* Google Font*/
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        /* Reset default styles */
+        body, h1, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+       *{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+}
+body{
+  background: #000;
+}
+.btn{
+  margin-top: 2rem;
+  width: 150px;
+  padding: 12px;
+  color: #fff;
+  background: tomato;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover{
+  background: rgba(212, 48, 48, 0.76);
+  transition: 0.4s;
+}
+/* Header */
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1.5rem 8%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: space-between;
+}
+
+        /* Home Section */
+        .home {
+            background-color: #baa6cf;
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .home h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .home p {
+            font-size: 1.6rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .home .btn {
+            background-color: #fff;
+            color: #baa6cf;
+            font-size: 1.6rem;
+            padding: 16px 32px;
+            border: 2px solid #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .home .btn:hover {
+            background-color: #baa6cf;
+            color: #fff;
+            transition: 0.4s;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #2e3548;
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .about p {
+            font-size: 1.6rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2e3548;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            font-size: 1.6rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <i></i>Fitness Hub
+        </a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Pricing</a>
+            <a href="#">|</a>
+            <a href="#">Login</a>
+            <a href="#" class="btn">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="max-width">
+            <h2>Welcome to Fitness Hub</h2>
+            <p>Your journey to a healthier and fitter you begins here.</p>
+            <button class="btn">Get Started</button>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="max-width">
+            <h2>About Fitness Hub</h2>
+            <p>Fitness Hub is a premier fitness center dedicated to helping you achieve your fitness goals. Our expert trainers and state-of-the-art facilities are here to support you on your fitness journey. Whether you're a beginner or an experienced athlete, we have something for everyone.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Fitness Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<?php 
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gorkha Martial Arts</title>
+    <link rel="stylesheet" href="style.css">
+  
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+        /* Your CSS styling goes here */
+             .max-width{
+            max-width: 1300px;
+            padding: 108px 20px;
+            margin: auto;
+        }
+        section{
+            padding: 50px 0 50px 0;
+        }
+        .home{
+            display: flex;
+            text-transform:capitalize;
+        }
+        .home .max-width{
+            width: 50%;
+            display: flex;
+        }
+        .home .home-content{
+            width: 50%;
+            padding: 2rem;
+        }
+
+        .home h3 {
+            color: #fff;
+            font-size: 5rem;
+            font-family: 'Philosopher', sans-serif;
+            margin-bottom: 1rem; /* Add some space between h3 and p */
+        }
+
+        .home p {
+            color: rgb(194, 191, 191);
+            font-size: 12px;
+            margin-bottom: 2rem; /* Add some space between p and button */
+        }
+
+
+        /* Home Section */
+        .max-width{
+            max-width: 1300px;
+            padding: 108px 20px;
+            margin: auto;
+        }
+        section{
+            padding: 50px 0 50px 0;
+        }
+        #facilities img {
+    max-width: 50%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+        .home{
+            display: flex;
+            text-transform:capitalize;
+
+        }
+        .home .max-width{
+            width: 100%;
+            display: flex;
+        }
+        .home .home-content{
+            width: 50%;
+            padding: 2rem;
+        }
+
+        .home h3 {
+            color: #fff;
+            font-size: 5rem;
+            font-family: 'Philosopher', sans-serif;
+            margin-bottom: 1rem; /* Add some space between h3 and p */
+        }
+
+        .home p {
+            color: rgb(194, 191, 191);
+            font-size: 12px;
+            margin-bottom: 2rem; /* Add some space between p and button */
+        }
+
+
+        .container{
+            margin-left: 300px;
+        
+            width: 85vmin;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 60%;
+            left:50%;
+            overflow: hidden;
+            border: 20px solid #ffffff;
+            border-radius: 8px;
+            box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+        }
+        .container img{
+            border-radius: 8px;
+        }
+        .wrapper{
+            width: 100%;
+            display: flex;
+            animation: slide 16s infinite;
+        }
+        @keyframes slide{
+            0%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(0);
+            }
+            30%{
+                transform: translateX(-100%);
+            }
+            50%{
+                transform: translateX(-100%);
+            }
+            55%{
+                transform: translateX(-200%);
+            }
+            75%{
+                transform: translateX(-200%);
+            }
+            80%{
+                transform: translateX(-300%);
+            }
+            100%{
+                transform: translateX(-300%);
+            }
+        }
+        img{
+            width: 100%; 
+        }
+        /* Introduction Section */
+.introduction {
+    background-color: #f7f7f7; /* Choose a background color that fits your design */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.introduction h3 {
+    font-size: 24px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Fixed footer styles */
+.fixed-footer {
+    position: fixed;
+    background-color:#143e62;
+    bottom: -130px;
+    left:-5% ;
+    width: 105%;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 100; /* Make sure it's on top of other content */
+}
+
+/* Social icons styles */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f00; /* Change the color on hover if needed */
+}
+
+    </style>
+</head>
+<body>
+    <?php require('header.php'); ?>
+    <section class="home">
+        <div class="max-width">
+            <div class="home-content">
+                <h3>help for ideal <br> body fitness</h3>
+                <p>"Unleash your inner warrior at Gorkha Martial Arts - where strength meets discipline."</p>
+                    <a href='register.php' class="btn">Get started</a>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container">
+        <div class="wrapper">
+            <img src="ninth.jpg">
+            <img src="fifth.jpg">
+<img src="siuu.jpg">
+            <img src="seventh.jpg">
+        </div>
+    </div>
+    <section id="facilities">
+            <h2>Our Facilities</h2>
+            <ul>
+                <li>
+                    <img src="mattted.jpg" alt="Steam Room">
+                    Steam Room
+                </li>
+                <li>
+                    <img src="gyme.jpg" alt="Matted Martial Arts Area">
+                    Matted Martial Arts Area
+                </li>
+                <li>
+                    <img src="gymd.jpg" alt="Fully-Equipped Gym">
+                    Fully-Equipped Gym
+                </li>
+                <li>
+                    <img src="sauna.jpg" alt="Sauna">
+                    Sauna
+                </li>
+                <li>
+                    <img src="steam.jpg" alt="Changing and Shower Facilities">
+                    Changing and Shower Facilities
+                </li>
+                <li>
+                    <img src="shower.jpg" alt="Facility 6">
+                    Facility 6
+                </li>
+                <li>
+                    <img src="Changingn.jpg" alt="Facility 7">
+                    Facility 7
+                </li>
+            </ul>
+        </section>
+    <footer class="fixed-footer">
+        <p> "Empowering Minds, Elevating Spirits - Unleashing Potential with every Punch and Kick. © 2023 Gorkha Martial Arts. All Rights and Fights Reserved."</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+
+</body>
+</html>

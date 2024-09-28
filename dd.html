@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+}
+
+.underline{
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.1s ease-in-out;
+}
+.logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+.logo:hover ~ .underline{
+    width: 10%;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.right a{
+    text-decoration: none;
+    color: #fff;
+}
+.right a:hover{
+    text-decoration: underline;
+    transition: 0.2s ease-in-out;
+}
+.active{
+    text-decoration: underline!important;
+}
+.container{
+    padding: 30px 100px;
+}
+h1.heading{
+    text-align: center;
+    padding: 20px;
+}
+.cards{
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-item{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px ;
+    margin: 15px;
+    padding:10px;
+    box-shadow: 5px 5px 20px 1px blue;
+    scale: 0.97;
+    transition: 0.15s ease-in-out;
+}
+.card-item:hover{
+    scale: 1;
+}
+.card-image{
+    width: 200px;
+    height: 200px;
+}
+
+.explore-btn{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.explore-btn:hover{
+    background-color: rgb(32, 32, 233);
+}
+.card-desc{
+    text-align: center;
+}
+.description{
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+.description:hover{
+    opacity: 1;
+}
+
+footer{
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+footer a.link{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin: 20px 0;
+}
+.item-container{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+.item{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 10px;
+}
+.image img{
+    width: 300px;
+}
+.reverse{
+    flex-direction: row-reverse!important;
+}
+.subscribe-input{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 5px 120px 5px 30px;
+    color: blue;
+}
+footer form{
+    position: relative;
+}
+.subscribe-btn{
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.subscribe-btn:hover{
+    background-color: rgb(39, 39, 238);
+}
+
+.item-container .form{
+    display: flex;
+    padding: 20px;
+}
+.item-container form{
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.item-container .form .left{
+    width: 50%;
+    background-image: url('../images/contact.png');
+    background-repeat: no-repeat;
+    background-position: 5%;
+    background-size: contain;
+    border-radius: 50px;
+}
+.item-container .form .right{
+    width: 50%;
+}
+
+.item-container form .input-field{
+    width: 100%;
+    margin: 10px 0;
+    text-align: left;
+}
+.item-container form .input-field input{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    color: blue;
+    font-size: 18px;
+}
+.item-container form textarea{
+    width: 400px;
+    height: 150px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    color: blue;
+    font-size: 18px;
+}
+.send-btn{
+    width: 200px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px
+}
+.send-btn:hover{
+    background-color: rgb(59, 59, 234);
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .cards{
+        flex-direction: column;
+    }
+    .card-item{
+        width: 70%;
+    }
+    .item{
+        flex-direction: column;
+    }
+    .container{
+        padding: 30px 20px;
+        align-items: center;
+    }
+    .reverse{
+        flex-direction: column!important;
+    }
+    footer{
+    flex-direction: column;
+    gap: 20px;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .item-container form .input-field input,
+    .item-container form textarea{
+        width: 230px;
+    }
+    .item-container .form .right{
+        width: 100%;
+    }
+    .item-container .form{
+        padding: 0px;
+    }
+    .right{
+        flex-direction: column;
+        gap: 5px;
+        font-size: 14px;
+    }
+  }
+</style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="logo">Your Logo</a>
+        <div class="right">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="heading">Welcome to Our Website</h1>
+        <div class="cards">
+            <div class="card-item">
+                <img src="card-image1.jpg" alt="Card Image" class="card-image">
+                <h2 class="card-title">Card Title 1</h2>
+                <p class="card-desc">Description for Card 1</p>
+                <a href="#" class="explore-btn">Explore</a>
+            </div>
+            <div class="card-item">
+                <img src="card-image2.jpg" alt="Card Image" class="card-image">
+                <h2 class="card-title">Card Title 2</h2>
+                <p class="card-desc">Description for Card 2</p>
+                <a href="#" class="explore-btn">Explore</a>
+            </div>
+            <!-- Add more card items here -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="item-container">
+            <div class="item">
+                <div class="image">
+                    <img src="footer-image.jpg" alt="Footer Image">
+                </div>
+                <div class="form">
+                    <div class="left"></div>
+                    <div class="right">
+                        <form>
+                            <div class="input-field">
+                                <input type="text" placeholder="Your Name">
+                            </div>
+                            <div class="input-field">
+                                <input type="email" placeholder="Your Email">
+                            </div>
+                            <div class="input-field">
+                                <textarea placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="send-btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <a href="#" class="link">Privacy Policy</a>
+            <a href="#" class="link">Terms of Service</a>
+            <a href="#" class="link">FAQ</a>
+        </div>
+    </footer>
+</body>
+</html>
